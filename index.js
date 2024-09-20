@@ -2,7 +2,7 @@ import "dotenv/config";
 import express from "express";
 const app = express();
 
-const port = process.env.port; //if we deploy it will crash
+const PORT = process.env.PORT || 3000; //if we deploy it will crash
 
 app.use(express.json()); //any data which comes in json format we accept that
 let teaData = [];
